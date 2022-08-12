@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+
+</style>
+
+<script>
+    function iniciar(){
+        let canvas = document.getElementById('myCanvas');
+        let context = canvas.getContext('2d');
+        let imagem =document.getElementById('nave');
+        let inimigo =document.getElementById('inimigo1');
+        let shoot = document.getElementById('shoot');
+        let navegod = document.getElementById('tbi');
+        context.drawImage(imagem, 50,50);
+        context.drawImage(inimigo, 150,150);
+        context.drawImage(tbi,50,90);
+
+
+    }
+</script>
+<body onload="iniciar()">
+    <canvas id="myCanvas" width="600" height="400" style="border: 1px solid; background-color: aliceblue;"></canvas>
+    <img src="imgs\nave.png" id = "nave">
+    <img src = "imgs\inimigo-fase1.png" id ="inimigo1">
+    <img src = "imgs\inimigo-fase2.png" id = "inimigo2">
+    <img src="imgs\tiro.png" id = "tiro">
+    <img src="imgs\tbi.gif" id="tbi"> 
+    <img src="imgs\lacarte.png" id="shoot">
+
+</body>
+</html>
